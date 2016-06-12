@@ -1,11 +1,18 @@
-class Department
+require './employee'
+require 'pp'
 
-  attr_accessor :dept_name
+class Department < Employee
+
+  attr_accessor :dept_name, :employees
 
   def initialize(dept_name)
     @dept_name = dept_name
+    @employees = []
   end
 
-end
+  def add_employee(employee)
+      @employees << employee
+  end
 
-dept = Department.new "Operations"
+
+end

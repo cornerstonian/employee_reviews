@@ -14,5 +14,8 @@ class Department < Employee
       @employees << employee
   end
 
+  def total_salaries
+
+  end
 
 end
